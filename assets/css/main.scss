@@ -1,0 +1,160 @@
+html, body { background: #1d2021; } // darkest grey on this site
+
+html { height: 100%; }
+
+body {
+  // color: #ebdbb2; // light grey
+  color: #d5c4a1; // more decent light grey 
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+.post-meta { text-align: right; }
+
+h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+*:target { background: #d79921; } // muddy yellow
+
+.w {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+hr:not(.meta,.nav-top,.nav-bottom) {
+  text-align: center;
+  border: 0;
+
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+hr.meta {
+  width: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-width: 0;
+  height: 0.25px;
+  color: #8a8a5c; // muddy green
+  background-color: #8a8a5c; // muddy green
+}
+
+hr.nav-top {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  border-width: 0;
+  height: 0.25px;
+  color: #8a8a5c; // muddy green
+  background-color: #8a8a5c; // muddy green
+
+}
+
+hr.nav-bottom {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  border-width: 0;
+  height: 0.25px;
+  color: #8a8a5c; // muddy green
+  background-color: #8a8a5c; // muddy green
+}
+
+pre {
+  background: #3c3836;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid #d65d0e; // dark orange
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  color: #83a598; // pastel blue
+  background: #3c3836; // middle dark grey
+  font-size: 80%;
+  padding: 0.1em 0.2em;
+  font-size: 90%;
+}
+
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  font-size: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid #d65d0e; // dark orange
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+a, a:visited {
+  // color: #98971a; // green
+  color: #d65d0e; // dark orange
+  text-decoration: none; // remove underlines
+}
+
+.nav-link, .nav-link:visited {
+  // color: #458588 !important; // blue
+  // color: #d79921 !important; // muddy yellow
+  // color: #076678 !important; // darker blue
+  color: #8a8a5c !important; // muddy green
+  font-weight: 900;
+  font-size: 1.17em;
+}
+
+a.list, a.list:visited, li > a, li > a.visited {
+  font-weight: 900;
+}
+
+figure {
+  max-width: 100%;
+  margin-right: -40px;
+  margin-left: -40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 3rem auto 0 auto;
+  border-radius: 10px; // rounded corners
+  transition: transform 0.8s;
+  position: relative;
+  z-index: 999;
+}
+
+img:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 999;
+}
+
+figcaption {
+  text-align: center;
+  opacity: 0.5;
+  position: static;
+  z-index: -1;
+}
+
+figcaption > h4 {
+  margin-top: 10px;
+}
+
