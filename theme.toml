@@ -1,0 +1,13 @@
+# theme.toml for Smpl theme
+
+name = "Smpl"
+license = "MIT"
+licenselink = "https://github.com/cntzr/smpl/blob/master/LICENSE"
+description = "simple theme"
+tags = [ "minimal", "dark", "responsive" ]
+features = [ "no-javascript" ]
+min_version = "0.41.0"
+
+[author]
+  name = "Andreas Rudloff"
+
